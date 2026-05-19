@@ -1,6 +1,43 @@
-# Skills 目录说明
+# Skills
 
-这个 `skills` 目录汇总了当前可用的 Agent Skills，用于扩展 AI 代理在开发、设计、文档、部署和自动化等场景下的能力。
+这个仓库汇总了当前可用的 Claude Code Agent Skills，用于扩展 AI 代理在开发、设计、文档、部署和自动化等场景下的能力。
+
+## 什么是 Skill
+
+Skill 是一组打包的指令和资源，当用户的任务匹配 skill 的描述时，Claude Code 会自动加载对应的 SKILL.md 来获取领域知识与工作流指引。每个 skill 是一个独立目录，包含 SKILL.md（必需）以及可选的脚本、参考文档、模板等资源。
+
+## 目录结构
+
+```
+skill-name/
+├── SKILL.md          # 必需：YAML frontmatter + markdown 指令
+├── LICENSE.txt        # 可选：技能许可证
+├── scripts/           # 确定性/重复性任务的可执行脚本
+├── references/        # 按需加载的参考文档
+├── assets/            # 产物中使用的文件（模板、图标、字体）
+├── templates/         # 代码生成模板
+├── examples/          # 示例输入/输出
+└── <语言目录>/         # 如 python/、typescript/、go/
+```
+
+### SKILL.md 格式
+
+每个 SKILL.md 包含 YAML frontmatter，其中 `name` 和 `description` 为必填字段。description 决定 skill 何时被触发，应明确说明触发条件与适用场景。正文为自由格式的 markdown 指令。
+
+```yaml
+---
+name: skill-name
+description: 触发条件与功能描述
+license: 可选许可证信息
+---
+```
+
+### 加载模型
+
+Skills 采用三级渐进式披露：
+1. **元数据**（name + description） — 始终在上下文中
+2. **SKILL.md 正文** — skill 触发时加载
+3. **捆绑资源** — 由 SKILL.md 按需引用加载
 
 ## 来源
 
@@ -8,8 +45,6 @@
 |------|------|
 | Anthropic 官方 Skills | [anthropics/skills](https://github.com/anthropics/skills) |
 | Vercel Labs 官方 Agent Skills | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
-
-当前目录中的 skills 主要来自上述两个仓库的整合与本地组织。
 
 ## Skills 一览
 
@@ -40,3 +75,6 @@
 | `vercel-cli-with-tokens` | 通过 Token 鉴权使用 Vercel CLI 进行部署和管理 | Vercel Labs |
 | `web-design-guidelines` | 按 Web 设计规范审查 UI（可访问性、性能、交互体验） | Vercel Labs |
 
+## 许可证
+
+本仓库整体采用 MIT 协议，详见 [LICENSE](LICENSE)。各 skill 目录下的 LICENSE.txt 为其各自技能的原许可证。
