@@ -6,12 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a curated collection of Claude Code agent skills sourced from [anthropics/skills](https://github.com/anthropics/skills) and [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills). Each skill extends Claude's capabilities for specific domains (design, documents, deployment, testing, etc.).
 
+## Skill Location
+
+All skills live under `.agent/skills/`. This is the directory configured in Claude Code settings as the skills search path. Vercel Labs skills additionally include `metadata.json` (version/owner/abstract), `AGENTS.md`, and sometimes a `rules/` directory with lint-style rules.
+
 ## Skill Anatomy
 
 Every skill directory follows this structure:
 
 ```
-skill-name/
+.agent/skills/skill-name/
 ├── SKILL.md          # Required: YAML frontmatter + markdown instructions
 ├── LICENSE.txt        # Optional: license for the skill
 ├── scripts/           # Executable code for deterministic/repetitive tasks
