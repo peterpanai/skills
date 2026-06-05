@@ -8,7 +8,28 @@ Skill 是一组打包的指令和资源，当用户的任务匹配 skill 的描�
 
 ## 安装
 
-将本仓库克隆后，在 Claude Code 的 settings.json 中配置技能路径：
+### 方式一：一键安装所有 Skills
+
+克隆本仓库后，在项目根目录运行以下命令即可将 `.agent/skills/` 下的所有 skills 安装到 OpenClaw 工作区：
+
+```bash
+# Linux / macOS
+for skill in .agent/skills/*/; do
+  name=$(basename "$skill")
+  if [ -d "/root/.openclaw/workspace/skills/$name" ]; then
+    echo "⏭️  $name 已存在，跳过"
+  else
+    cp -r "$skill" "/root/.openclaw/workspace/skills/$name"
+    echo "✅ 已安装: $name"
+  fi
+done
+```
+
+> 💡 如需安装到其他路径，请自行修改目标目录。
+
+### 方式二：手动配置
+
+将本仓库克隆后，在 Claude Code / OpenClaw 的配置中指向技能路径：
 
 ```json
 {
@@ -102,9 +123,25 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 
 ### ClawHub
 
-| 目录名 | 用途 |
-|--------|------|
-| `planning-with-files` | 类 Manus 任务规划，用持久化 Markdown 文件作为 AI 的"磁盘工作记忆"，适合复杂多步任务 |
+> 🔥 **写作与内容创作**
+> 
+> | 目录名 | 用途 |
+> |--------|------|
+> | `planning-with-files` | 类 Manus 任务规划，用持久化 Markdown 文件作为 AI 的"磁盘工作记忆"，适合复杂多步任务 |
+> | `blog-seo-writer` | 技术博客写作+SEO优化，自动优化标题、关键词和内链，提升搜索排名 |
+> | `explain-code` | 代码智能解析，将技术代码自动生成为通俗易懂的解释，适合博客配文 |
+> | `markdown-converter` | Markdown 转多平台格式（HTML/PDF/微信公众号等），写博客日常必备 |
+> | `html-markdown-hybrid` | HTML 与 Markdown 混合排版，支持表格、自定义样式等复杂格式 |
+> | `web-scraping-tool-selection-strategy` | 网页数据抓取策略，为写作和研究收集素材 |
+> | `beautiful-mermaid` | Mermaid 图表渲染（流程图/架构图/时序图），支持16种主题，导出 SVG/PNG |
+>
+> 🔧 **开发与部署**
+> 
+> | 目录名 | 用途 |
+> |--------|------|
+> | `china-cloud-deploy` | 国内云平台（阿里云/腾讯云等）一键部署，适合国内服务器环境 |
+> | `china-seo-baidu` | 百度搜索引擎 SEO 优化，面向国内读者的技术博客必备 |
+> | `database-operations` | 数据库操作与 SQL 优化，技术博客涉及数据库内容时生成规范的示例和文档 |
 
 ## 许可证
 
