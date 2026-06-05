@@ -10,22 +10,11 @@ Skill 是一组打包的指令和资源，当用户的任务匹配 skill 的描�
 
 ### 方式一：一键安装所有 Skills
 
-克隆本仓库后，在项目根目录运行以下命令即可将 `.agent/skills/` 下的所有 skills 安装到 OpenClaw 工作区：
+克隆本仓库后，在项目根目录运行以下命令即可将 `.agent/skills/` 下的所有 skills 一键安装：
 
 ```bash
-# Linux / macOS
-for skill in .agent/skills/*/; do
-  name=$(basename "$skill")
-  if [ -d "/root/.openclaw/workspace/skills/$name" ]; then
-    echo "⏭️  $name 已存在，跳过"
-  else
-    cp -r "$skill" "/root/.openclaw/workspace/skills/$name"
-    echo "✅ 已安装: $name"
-  fi
-done
+npx skills add --all
 ```
-
-> 💡 如需安装到其他路径，请自行修改目标目录。
 
 ### 方式二：手动配置
 
