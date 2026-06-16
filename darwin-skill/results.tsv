@@ -1,0 +1,7 @@
+timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-06-16T15:27	b4213da	chapter-review	-	67.9	baseline	全9维	D1:7 D2:9 D3:5 D4:5 D5:7 D6:8 D7:8 D8:7(干跑) D9:4	dry_run
+2026-06-16T15:27	b4213da	xiantu-novel-writer	-	73.1	baseline	全9维	D1:8 D2:9 D3:5 D4:5 D5:8 D6:9 D7:9 D8:7(干跑) D9:6	dry_run
+2026-06-16T15:38	9016eab	chapter-review	67.9	76.9	keep	D3+D4+D9	D3:5→8 D4:5→8 D7:8→9 D9:4→8	dry_run
+2026-06-16T15:38	9016eab	xiantu-novel-writer	73.1	79.7	keep	D3+D4+D9	D3:5→8 D4:5→8 D9:6→8	dry_run
+2026-06-16T16:25	cec40dd	chapter-review	76.9	80.9	keep	D5(+D2)	D2:9→9.5 D5:7→9	dry_run
+2026-06-16T16:25	cec40dd	xiantu-novel-writer	79.7	81.4	keep	D5	D5:8→9 (Δ1.7<2触顶信号)	dry_run
