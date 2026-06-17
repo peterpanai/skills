@@ -74,6 +74,7 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | Vercel Labs 官方 Agent Skills | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
 | ClawHub 社区 Skills | [clawhub.com](https://clawhub.com) |
 | Darwin Skill（自优化框架） | [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) |
+| Last30Days Skill（跨平台研究） | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) |
 
 ## Skills 一览
 
@@ -116,6 +117,12 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | 目录名 | 用途 | 来源 |
 |--------|------|------|
 | `darwin-skill` | Skill 自优化框架——集成 Microsoft Research SkillLens 9 维评分 + SkillOpt 验证机制，自动评估和改进 SKILL.md 质量 | GitHub |
+
+### Community
+
+| 目录名 | 用途 | 来源 |
+|--------|------|------|
+| `last30days-skill` | 跨平台研究引擎——聚合Reddit/X/YouTube/HN/Polymarket/Web 的最近30天讨论与趋势，生成基于真实参与度（点赞/投票/金额）的综合摘要 | GitHub |
 
 ### ClawHub
 
