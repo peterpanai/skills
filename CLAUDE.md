@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a curated collection of Claude Code agent skills sourced from [anthropics/skills](https://github.com/anthropics/skills) and [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills). Each skill extends Claude's capabilities for specific domains (design, documents, deployment, testing, etc.).
+This is a curated collection of Claude Code agent skills sourced from [anthropics/skills](https://github.com/anthropics/skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), and [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) (skill self-optimization framework). Each skill extends Claude's capabilities for specific domains (design, documents, deployment, testing, etc.).
 
 ## Skill Location
 

@@ -73,6 +73,7 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | Anthropic 官方 Skills | [anthropics/skills](https://github.com/anthropics/skills) |
 | Vercel Labs 官方 Agent Skills | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
 | ClawHub 社区 Skills | [clawhub.com](https://clawhub.com) |
+| Darwin Skill（自优化框架） | [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) |
 
 ## Skills 一览
 
@@ -109,6 +110,12 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | `react-view-transitions` | React 视图过渡动画与路由过渡体验 |
 | `vercel-cli-with-tokens` | 通过 Token 鉴权使用 Vercel CLI 进行部署和管理 |
 | `web-design-guidelines` | 按 Web 设计规范审查 UI（可访问性、性能、交互体验） |
+
+### Darwin Skill
+
+| 目录名 | 用途 | 来源 |
+|--------|------|------|
+| `darwin-skill` | Skill 自优化框架——集成 Microsoft Research SkillLens 9 维评分 + SkillOpt 验证机制，自动评估和改进 SKILL.md 质量 | GitHub |
 
 ### ClawHub
 
