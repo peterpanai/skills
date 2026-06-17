@@ -75,6 +75,8 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | ClawHub 社区 Skills | [clawhub.com](https://clawhub.com) |
 | Darwin Skill（自优化框架） | [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) |
 | Last30Days Skill（跨平台研究） | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) |
+| CrossFrame Skill Suite（中文结构诊断） | [xi-kari/crossframe-skill](https://github.com/xi-kari/crossframe-skill) |
+| Humanizer（AI文本去痕迹） | [blader/humanizer](https://github.com/blader/humanizer) |
 
 ## Skills 一览
 
@@ -123,6 +125,8 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | 目录名 | 用途 | 来源 |
 |--------|------|------|
 | `last30days-skill` | 跨平台研究引擎——聚合Reddit/X/YouTube/HN/Polymarket/Web 的最近30天讨论与趋势，生成基于真实参与度（点赞/投票/金额）的综合摘要 | GitHub |
+| `crossframe-skill` | 中文结构诊断与成文技能组（12个技能）——处理关系、团队、组织、制度、公共争议、长期演化和思想文章等复杂问题，先做结构诊断再输出判断/答复/案例/文章 | GitHub |
+| `humanizer` | AI 文本去痕迹工具——去除 AI 写作的典型特征（多余破折号、表情符号、引导句、过度粗体等），让文本听起来更像人类自然写作 | GitHub |
 
 ### ClawHub
 

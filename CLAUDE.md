@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a curated collection of Claude Code agent skills sourced from [anthropics/skills](https://github.com/anthropics/skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) (skill self-optimization framework), and [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) (cross-platform research engine). Each skill extends Claude's capabilities for specific domains (design, documents, deployment, testing, etc.).
+This is a curated collection of Claude Code agent skills sourced from [anthropics/skills](https://github.com/anthropics/skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) (skill self-optimization framework), [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) (cross-platform research engine), [xi-kari/crossframe-skill](https://github.com/xi-kari/crossframe-skill) (Chinese structural diagnostics suite), and [blader/humanizer](https://github.com/blader/humanizer) (AI text humanization). Each skill extends Claude's capabilities for specific domains (design, documents, deployment, testing, etc.).
 
 ## Skill Location
 
