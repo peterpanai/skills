@@ -106,6 +106,7 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | CrossFrame Skill Suite（中文结构诊断） | [xi-kari/crossframe-skill](https://github.com/xi-kari/crossframe-skill) |
 | Humanizer（AI文本去痕迹） | [blader/humanizer](https://github.com/blader/humanizer) |
 | Superpowers（开发流程技能框架） | [obra/superpowers](https://github.com/obra/superpowers) |
+| MarkItDown（文件转 Markdown） | [microsoft/MarkItDown](https://github.com/microsoft/MarkItDown) |
 
 ## Skills 一览
 
@@ -221,6 +222,14 @@ git commit -m "chore: update superpowers submodule"
 # 更新 Claude Code 插件
 claude plugin update superpowers@claude-plugins-official
 ```
+
+## Tools（Git Submodule）
+
+> 路径：`tools/`，详细说明见 [tools/README.md](tools/README.md)
+
+| 工具 | 来源 | 用途 |
+|------|------|------|
+| MarkItDown | [microsoft/MarkItDown](https://github.com/microsoft/MarkItDown) | 文件转 Markdown（PDF/DOCX/PPTX/XLSX/HTML/Audio/YouTube） |
 
 ## 许可证
 
