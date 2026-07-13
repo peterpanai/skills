@@ -107,6 +107,7 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 | Humanizer（AI文本去痕迹） | [blader/humanizer](https://github.com/blader/humanizer) |
 | Superpowers（开发流程技能框架） | [obra/superpowers](https://github.com/obra/superpowers) |
 | MarkItDown（文件转 Markdown） | [microsoft/MarkItDown](https://github.com/microsoft/MarkItDown) |
+| Obsidian Skills（Obsidian 笔记技能） | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) |
 
 ## Skills 一览
 
@@ -184,6 +185,32 @@ SKILL.md 正文保持在 500 行以内；超出时拆分到 `references/` 文件
 ```bash
 # Claude Code 插件安装（推荐）
 claude plugin install superpowers@claude-plugins-official
+
+# 或通过本仓库 submodule
+git clone --recursive https://github.com/peterpanai/skills.git
+```
+
+### Obsidian Skills（Git Submodule）
+
+> 路径：`skills/obsidian-skills/`（Git Submodule，指向 [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)）
+
+| 目录名 | 用途 |
+|--------|------|
+| `defuddle` | 从网页提取干净的 Markdown 内容，去除广告和导航，节省 token |
+| `json-canvas` | 创建和编辑 JSON Canvas 文件（.canvas），可视化画布、思维导图、流程图 |
+| `obsidian-bases` | 创建和编辑 Obsidian Bases（.base 文件），数据库式笔记视图 |
+| `obsidian-cli` | 通过 Obsidian CLI 读写笔记、搜索 vault、管理任务和属性 |
+| `obsidian-markdown` | 编写 Obsidian 风格 Markdown（wikilinks、callouts、frontmatter、embeds） |
+
+**安装方式**：
+
+```bash
+# Claude Code 插件安装
+/plugin marketplace add kepano/obsidian-skills
+/plugin install obsidian@obsidian-skills
+
+# 或 npx skills
+npx skills add https://github.com/kepano/obsidian-skills
 
 # 或通过本仓库 submodule
 git clone --recursive https://github.com/peterpanai/skills.git

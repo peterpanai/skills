@@ -4,3 +4,6 @@
 [submodule "tools/markitdown"]
 	path = tools/markitdown
 	url = https://github.com/microsoft/MarkItDown.git
+[submodule "skills/obsidian-skills"]
+	path = skills/obsidian-skills
+	url = https://github.com/kepano/obsidian-skills.git
