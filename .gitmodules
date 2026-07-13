@@ -1,1 +1,3 @@
-# Superpowers - tracked as subtree, not submodule
+[submodule "superpowers"]
+	path = superpowers
+	url = https://github.com/obra/superpowers.git
